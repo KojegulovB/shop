@@ -1,17 +1,17 @@
 import React from 'react'
-import './header.css'
+import css from './header.module.css'
 import basket from './../../images/shopping-cart.png'
 export const Header = () => {
-    return <div className={'header__wrapper wrapper'}>
+    return <div className={`${css.wrapper } wrapper `}>
         <div>Logo</div>
-        <div className={'menu__wrapper'}>
-            <div className={'menu__items'}>Главная</div>
-            <div className={'menu__items'}>Категория</div>
-            <div className={'menu__items'}>Популярные</div>
-            <div className={'menu__items'}>Новинки</div>
+        <div className={`${css.menu}`}>
+            <div className={`${css.items}`}>Главная</div>
+            <div className={`${css.items}`}>Категория</div>
+            <div className={`${css.items}`}>Популярные</div>
+            <div className={`${css.items}`}>Новинки</div>
         </div>
         <div>
-            <div className={'img__wrapper'}> 
+            <div className={`${css.img}`}> 
                 <img src={basket} alt='Basket' />
             </div>
         </div>
