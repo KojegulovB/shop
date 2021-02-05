@@ -1,10 +1,26 @@
 .wrapper{
+  width: 300px;
+  margin: 10px 15px;
 }
 .img_wrapper{
   width: 300px;
+  height: 500px;
+  overflow: hidden;
+  position: relative;
 }
-.name_wrapper{
+.img_wrapper>span{
+  position: absolute;
+  right: 25px;
+  top: 20px;
+}
+
+.img_wrapper>img{
   width: 100%;
-  color: red;
+  height: 100%;
+}
+
+.name_wrapper{
+  display: flex;
+  justify-content: space-between;
 }
 
